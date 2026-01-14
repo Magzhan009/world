@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(248, 243, 243);
+    }
+    .container {
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: white;
+    }
+    .search {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: 30px;
+      width: 400px;
+      border-radius: 5px;
+    }
+    .search img {
+      width: 40px;
+      padding-left: 10px;
+    }
+    .second {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .filter {
+      background-color: white;
+      width: 150px;
+      height: 30px;
+      margin-right: 30px;
+      border-radius: 5px;
+    }
+    .filter span {
+      padding-left: 10px;
+      line-height: 30px;
+    }
+    .world {
+      display: grid;
+      grid-template-areas:
+        "germany usa brazil iceland"
+        "afganistan aland albania algeria";
+      justify-content: center;
+    }
+    .germany {
+      background-color: white;
+      width: 300px;
+      margin: 30px;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      grid-area: germany;
+    }
+    .germany img {
+      width: 300px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .usa {
+      background-color: white;
+      width: 300px;
+      margin: 30px;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      grid-area: usa;
+    }
+    .usa img {
+      width: 300px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .brazil {
+      background-color: white;
+      width: 300px;
+      margin: 30px;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      grid-area: brazil;
+    }
+    .brazil img {
+      width: 300px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .iceland {
+      background-color: white;
+      width: 300px;
+      margin: 30px;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      grid-area: iceland;
+    }
+    .iceland img {
+      width: 300px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .afganistan {
+      background-color: white;
+      width: 300px;
+      margin: 30px;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      grid-area: afganistan;
+    }
+    .afganistan img {
+      width: 300px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .aland {
+      background-color: white;
+      width: 300px;
+      margin: 30px;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      grid-area: aland;
+    }
+    .aland img {
+      width: 300px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .albania {
+      background-color: white;
+      width: 300px;
+      margin: 30px;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      grid-area: albania;
+    }
+    .albania img {
+      width: 300px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .algeria {
+      background-color: white;
+      width: 300px;
+      margin: 30px;
+      border-radius: 5px;
+      padding-bottom: 20px;
+      grid-area: algeria;
+    }
+    .algeria img {
+      width: 300px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    @media (max-width: 1200px) {
+      .world {
+        grid-template-areas:
+          "germany usa"
+          "brazil iceland"
+          "afganistan aland"
+          "albania algeria";
+      }
+    }
+    @media (max-width: 700px) {
+      .world {
+        grid-template-areas:
+          "germany"
+          "usa"
+          "brazil"
+          "iceland"
+          "afganistan"
+          "aland"
+          "albania"
+          "algeria";
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Where in the wold?</h2>
+        <p>Dark Mode</p>
+      </div>
+      <div class="second">
+        <div class="search">
+          <img src="Снимок экрана 2026-01-13 в 20.57.45.png" />
+          <span style="opacity: 0.7; padding-left: 10px"
+            >Search for a country...</span
+          >
+        </div>
+        <div class="filter">
+          <span>Filter by Region ></span>
+        </div>
+      </div>
+      <div class="world">
+        <div class="germany">
+          <img src="germany.png" />
+          <h3>Germany</h3>
+          <p>Population: 81,770,900</p>
+          <p>Region: Europe</p>
+          <p>Capital: Berlin</p>
+        </div>
+        <div class="usa">
+          <img src="usa.png" />
+          <h3>United States of America</h3>
+          <p>Population: 325,719,178</p>
+          <p>Region: North America</p>
+          <p>Capital: Washington, D.C.</p>
+        </div>
+        <div class="brazil">
+          <img src="brazil.png" />
+          <h3>Brazil</h3>
+          <p>Population: 209,288,276</p>
+          <p>Region: South America</p>
+          <p>Capital: Brasília</p>
+        </div>
+        <div class="iceland">
+          <img src="iceland.png" />
+          <h3>Iceland</h3>
+          <p>Population: 324,518</p>
+          <p>Region: Europe</p>
+          <p>Capital: Reykjavik</p>
+        </div>
+        <div class="afganistan">
+          <img src="afganistan.png" />
+          <h3>Afghanistan</h3>
+          <p>Population: 32,225,560</p>
+          <p>Region: Asia</p>
+          <p>Capital: Kabul</p>
+        </div>
+        <div class="aland">
+          <img src="Aland Islands.png" />
+          <h3>Aland Islands</h3>
+          <p>Population: 28,875</p>
+          <p>Region: Europe</p>
+          <p>Capital: Marigot</p>
+        </div>
+        <div class="albania">
+          <img src="Albania.png" />
+          <h3>Albania</h3>
+          <p>Population: 2,877,797</p>
+          <p>Region: Europe</p>
+          <p>Capital: Tirana</p>
+        </div>
+        <div class="algeria">
+          <img src="Algeria.png" />
+          <h3>Algeria</h3>
+          <p>Population: 41,316,500</p>
+          <p>Region: Africa</p>
+          <p>Capital: Algiers</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
